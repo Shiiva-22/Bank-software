@@ -5,6 +5,9 @@ import CreateAccount from "./CreateAccount.jsx";
 
 import Dashboard from "./dashboard";
 import {createBrowserRouter,RouterProvider} from "react-router-dom";
+import DebitAmount from "./DebitAmount.jsx";
+import CreditAmount from "./CreditAmount.jsx";
+
 
 
 let AppRouter = createBrowserRouter([
@@ -19,6 +22,14 @@ let AppRouter = createBrowserRouter([
   {
     path:"/CreateAccount",
     element:<CreateAccount/>
+  },
+  {
+    path:"/CreditAmount",
+    element:<CreditAmount/>
+  },
+  {
+    path:"/DebitAmount",
+    element:<DebitAmount/>
   }
 ])
 

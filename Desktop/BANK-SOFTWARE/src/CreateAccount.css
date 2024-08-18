@@ -1,47 +1,51 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+
+
+.Form-wrapper {
+  width: 50%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.Form-wrapper{
-    height: 500px;
-    width: 500px;
-    border:  2px solid black;
-    justify-content: center;
-    text-align: center;
-    margin-left: 150px;
-    margin-top: 50px;
-    padding-top: 30px;
-    border-radius: 40px;
+.Form-wrapper input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.Form-wrapper input{
-    height: 60px;
-    width: 290px;
-    margin-bottom: 30px;
-    border-radius: 30px;
-    padding-left: 20px;
-    font-size: 15px;
-}
-.Form-wrapper select{
-    height: 60px;
-    width: 310px;
-    font-size: 15px;
-    margin-bottom: 30px;
-    border-radius: 25px;
-    padding-left: 20px;
-
-
+.Form-wrapper input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-
-.Form-wrapper button{
-    height: 60px;
-    width: 150px;
-  background-color: #4caf50; /* green background for the button */
-  color: white;
-  font-size: 19px;
-  font-weight: 500;
-  border-radius: 25px;
+.Form-wrapper select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
+
+.Form-wrapper button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Form-wrapper button:hover {
+  background-color: #3e8e41;
+}
+

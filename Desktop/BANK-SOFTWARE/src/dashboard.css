@@ -68,6 +68,24 @@ body {
 .LinkCustom{
   text-decoration: none;
   color: white;
+  width: 200px;
+  height: 40px;
+  background-color: #4caf50; /* green background for the button */
+  color: white;
+  font-weight: 800;
+  font-size: 19px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  align-content: center;
+  margin-right: 29px;
+}
+.LinkCustom:hover{
+  background-color: #3e8e41; /* darker green on hover */
+  height: 55px;
+  
+  transition-duration: 0.2s;
 }
 
 .side-section {

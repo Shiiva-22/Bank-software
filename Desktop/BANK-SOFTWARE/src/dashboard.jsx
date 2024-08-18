@@ -1,13 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./dashboard.css";
 
-import data from "./GlobalData.jsx"
+import { data } from "./GlobalData.jsx"
 
 import { Link } from "react-router-dom";
+import DebitAmount from "./DebitAmount.jsx";
+import CreditAmount from "./CreditAmount.jsx";
 
 
 const Dasboard = () => {
-  const [showdata, setshowdata] = useState(data);
+  const [showdata, setshowdata] = useState([]);
+
+  useEffect(() => {
+    setshowdata(data);
+  }, []);
 
   const Account = (val) => {
     let result = data.filter((item) => {
@@ -22,6 +28,8 @@ const Dasboard = () => {
     setshowdata(data);
   };
 
+  console.log(data, 'data')
+
   return (
     <div>
       <nav className="nav-section">
@@ -29,9 +37,11 @@ const Dasboard = () => {
           <h1>BOI</h1>
           <span>Bank Of India</span>
         </div>
-        <button><Link className="LInkCustom" to="/CreateAccount">Create Account</Link></button>
-        <button>Deposite Amount</button>
-        <button>Credit Amount</button>
+        <Link className="LinkCustom" to="/CreateAccount">Create Account</Link>
+        <Link className="LinkCustom" to="/CreditAmount">Credit Amount</Link>
+        <Link className="LinkCustom" to="/DebitAmount">Debit Amount</Link>
+
+       
       </nav>
       <div className="screen-wrapper">
         <section className="side-section">
